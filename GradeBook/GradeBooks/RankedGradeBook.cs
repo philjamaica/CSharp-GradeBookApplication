@@ -27,6 +27,21 @@ namespace GradeBook.GradeBooks
                 return 'A';
             }
 
+            if (grades[(rankingGroup * 2) - 1] <= averageGrade)
+            {
+                return 'B';
+            }
+
+            if (grades[(rankingGroup * 3) - 1] <= averageGrade)
+            {
+                return 'C';
+            }
+
+            if (grades[(rankingGroup * 4) - 1] <= averageGrade)
+            {
+                return 'D';
+            }
+
 
             return 'F';
         }
