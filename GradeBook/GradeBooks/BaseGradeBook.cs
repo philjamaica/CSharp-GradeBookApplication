@@ -108,7 +108,7 @@ namespace GradeBook.GradeBooks
             }
         }
 
-        public virtual int GetGPA(char letterGrade, StudentType studentType)
+        public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
             int weightedAdjustment = 0;
             if (IsWeighted && (studentType == StudentType.DualEnrolled || studentType == StudentType.Honors))
